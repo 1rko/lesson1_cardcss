@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const ImgStyled = styled.img`
+// @ts-ignore
+export const ImgStyled = styled.img.attrs(({src}) => ({src: src}))`
+  src: src;
   width: 280px;
   height: 170px;
   position: relative;

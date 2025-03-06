@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CardWrapper = styled.div`
+export const CardStyled = styled.div`
   background-color: rgba(255, 255, 255, 1);
   padding: 10px 10px 10px 10px;
   border: none;
