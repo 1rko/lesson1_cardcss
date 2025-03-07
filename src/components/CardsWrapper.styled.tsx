@@ -1,13 +1,18 @@
 import styled from 'styled-components';
 
-export const ButtonPanel = styled.div`
+export const CardsWrapper = styled.div`
   position: relative;
+  width: 1000px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 
+  @media (max-width: 912px) {
+    width: 800px;
+  }
+  
   @media (max-width: 768px) {
-    //width: 50%;
     flex-direction: column;
     align-items: center;
   }

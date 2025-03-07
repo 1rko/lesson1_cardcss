@@ -8,21 +8,6 @@ import {ButtonPanel} from "./ButtonPanel.styled";
 //import {Input} from "./Input.styled";
 import {ContentWrapper} from "./ContentWrapper.styled";
 
-const cardsArray = [
-    /* {img: {src:'',
-         alt:''},
-     title: '',
-     subscribtion:''}*/
-    {
-        img: {
-            src: {Desert},
-            alt: 'Пустыня'
-        },
-        title: 'Пустыня Сахара',
-        subscribtion: 'Описание пустыни Сахара'
-    }
-]
-
 type CardPropsType = {
     img: {
         src: string,
@@ -33,21 +18,8 @@ type CardPropsType = {
 }
 
 export const Card = ({img, title, subscribtion}: CardPropsType) => {
-    debugger
     return <>
-        <CardStyled>
-            <ImgStyled src={Desert} alt='Пустыня'/>
-            <ContentWrapper>
-                <Title>Headline</Title>
-                <Subscription>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in
-                    venen.Faucibus. </Subscription>
-                <ButtonPanel>
-                    <Button primary>See more</Button>
-                    <Button secondary>Save</Button>
-                </ButtonPanel>
-            </ContentWrapper>
-        </CardStyled>
-
+        
         <CardStyled>
             <ImgStyled src={img.src} alt={img.alt}/>
             <ContentWrapper>
