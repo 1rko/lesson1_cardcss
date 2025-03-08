@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Title = styled.div`
+export const Title = styled.h2`
   position: relative;
-  width: 70px;
+  max-width: 50%;
   height: auto;
   font: Inter;
   font-weight: 700;

@@ -63,10 +63,10 @@ function App() {
         <>
             <ThemeProvider theme={myTheme}>
                 <GlobalStyle/>
-
                 <CardsWrapper>
-                    {cardsArray.map((item) => (
+                    {cardsArray.map((item, index) => (
                         <Card
+                            key={index}     //temp - индекс массива заменится на id
                             img={{src: item.img.src, alt: item.img.alt}}
                             title={item.title}
                             subscribtion={item.subscribtion}

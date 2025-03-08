@@ -5,7 +5,7 @@ import {Title} from "./Title.styled";
 import {Subscription} from "./Subscription.styled";
 import {Button} from "./Button.styled";
 import {ButtonPanel} from "./ButtonPanel.styled";
-//import {Input} from "./Input.styled";
+import {Input} from "./Input.styled";
 import {ContentWrapper} from "./ContentWrapper.styled";
 
 type CardPropsType = {
@@ -19,25 +19,24 @@ type CardPropsType = {
 
 export const Card = ({img, title, subscribtion}: CardPropsType) => {
     return <>
-        
         <CardStyled>
             <ImgStyled src={img.src} alt={img.alt}/>
             <ContentWrapper>
                 <Title>{title}</Title>
                 <Subscription>{subscribtion} </Subscription>
                 <ButtonPanel>
-                    <Button primary>See more</Button>
-                    <Button secondary>Save</Button>
+                    <Button primary={'true'}>See more</Button>
+                    <Button secondary={'true'}>Save</Button>
                 </ButtonPanel>
             </ContentWrapper>
         </CardStyled>
 
         {/*<ButtonPanel>
-            <ButtonStyled bgColor={'pink'} borderColor={'yellow'}>Hello</ButtonStyled>
-            <ButtonStyled bgColor={'red'} borderColor={'green'}>Hello</ButtonStyled>
-            <ButtonStyled primary>Hello</ButtonStyled>
-            <ButtonStyled outlined>Hello</ButtonStyled>
-            <ButtonStyled>Hello</ButtonStyled>
+            <Button bgColor={'pink'} borderColor={'yellow'}>Hello</Button>
+            <Button bgColor={'red'} borderColor={'green'}>Hello</Button>
+            <Button primary>Hello</Button>
+            <Button outlined>Hello</Button>
+            <Button>Hello</Button>
         </ButtonPanel>
         <ButtonPanel>
             <Input type="checkbox"/>

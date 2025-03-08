@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Subscription = styled.div`
+export const Subscription = styled.p`
   position: relative;
   width: 260px;
   height: auto;

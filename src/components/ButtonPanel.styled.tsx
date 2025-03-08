@@ -7,7 +7,6 @@ export const ButtonPanel = styled.div`
   gap: 10px;
 
   @media (max-width: 768px) {
-    //width: 50%;
     flex-direction: column;
     align-items: center;
   }
